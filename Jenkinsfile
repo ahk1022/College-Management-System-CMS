@@ -20,7 +20,7 @@ pipeline{
             steps{
                 
                 echo "code build"
-                docker_build("CMS-app","latest","ahk3983")
+                docker_build("cms-app","latest","ahk3983")
                    
             }
         }
@@ -29,7 +29,7 @@ pipeline{
             steps{
                 script{
                     
-                    docker_push("CMS-app","latest","ahk3983")
+                    docker_push("cms-app","latest","ahk3983")
                 }
             }
         }
